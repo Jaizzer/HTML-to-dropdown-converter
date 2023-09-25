@@ -22,5 +22,13 @@ module.exports = {
     ecmaVersion: 'latest',
   },
   rules: {
+    indent: [
+      'error',
+      4,
+    ],
+    quotes: [
+      'error',
+      'single',
+    ],
   },
 };
