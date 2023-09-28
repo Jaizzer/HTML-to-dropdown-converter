@@ -28,3 +28,13 @@
 .drop-down:hover {
     background-color: grey;
 }
+
+
+.drop-down-item {
+    text-align: justify;
+    padding: 10px;
+}
+
+.drop-down-item:hover {
+    background-color: #8a8ab6;
+}
