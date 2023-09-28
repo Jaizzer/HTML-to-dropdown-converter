@@ -3,7 +3,8 @@
 }
 
 .navbar {
-    height: 100px;
+    height: 36px;
+    padding: 10px;
     background-color: #8a8ab6;
 
     display: grid;
