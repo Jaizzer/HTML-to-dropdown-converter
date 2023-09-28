@@ -70,7 +70,7 @@ To utilize the module, follow these steps:
 
 Here's an example of how to use the HTML to DropDown Converter:
 
-    ```HTML
+```HTML
         <!DOCTYPE html> 
             <html lang="en"> 
                 <head> 
@@ -98,7 +98,7 @@ Here's an example of how to use the HTML to DropDown Converter:
                     
                 </body>
             </html>
-    ```
+```
 
 ## Contributing
 Contributions to this package are very welcome! If you find any bugs or have improvement suggestions, just open an issue on the GitHub repository. You can also fork the repository, make your changes, and then submit a pull request. 
