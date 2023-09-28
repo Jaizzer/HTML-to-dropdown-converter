@@ -71,33 +71,33 @@ To utilize the module, follow these steps:
 Here's an example of how to use the HTML to DropDown Converter:
 
 ```HTML
-        <!DOCTYPE html> 
-            <html lang="en"> 
-                <head> 
-                    <meta charset="UTF-8"> 
-                    <meta name="viewport"content="width=device-width, initial-scale=1.0"> 
-                    <title>HTML to DropDown Converter Example</title> 
-                </head> 
-                <body> 
-                    <div class="drop-down"> 
-                        DropDown 🔽 
-                        <div class="drop-down-items-container"> 
-                            <div class="drop-down-item">item-1</div> 
-                            <div class="drop-down-item">item-2</div> 
-                            <div class="drop-down-item">item-3</div> 
-                            <div class="drop-down-item">item-4</div> 
-                            <div class="drop-down-item">item-5</div> 
-                        </div> 
-                    </div> 
-                
-                    <script> 
-                        const{ turnToDropDown } = require('html-to-dropdown-converter'); 
-                        const dropDownButton = document.querySelector('.drop-down'); 
-                        turnToDropDown(dropDownButton); 
-                    </script> 
-                    
-                </body>
-            </html>
+<!DOCTYPE html> 
+    <html lang="en"> 
+        <head> 
+            <meta charset="UTF-8"> 
+            <meta name="viewport"content="width=device-width, initial-scale=1.0"> 
+            <title>HTML to DropDown Converter Example</title> 
+        </head> 
+        <body> 
+            <div class="drop-down"> 
+                DropDown 🔽 
+                <div class="drop-down-items-container"> 
+                    <div class="drop-down-item">item-1</div> 
+                    <div class="drop-down-item">item-2</div> 
+                    <div class="drop-down-item">item-3</div> 
+                    <div class="drop-down-item">item-4</div> 
+                    <div class="drop-down-item">item-5</div> 
+                </div> 
+            </div> 
+        
+            <script> 
+                const{ turnToDropDown } = require('html-to-dropdown-converter'); 
+                const dropDownButton = document.querySelector('.drop-down'); 
+                turnToDropDown(dropDownButton); 
+            </script> 
+            
+        </body>
+    </html>
 ```
 
 ## Contributing
