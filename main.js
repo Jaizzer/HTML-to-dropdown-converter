@@ -9,5 +9,3 @@ function turnToDropDown(dropDownButton) {
         dropDownItemsContainer.classList.toggle('hidden');
     });
 }
-
-turnToDropDown(document.querySelector('.drop-down'));
