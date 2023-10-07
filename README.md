@@ -101,7 +101,7 @@ Here's an example of how to use the HTML to DropDown Converter:
 ```
 
 ## Contributing
-Contributions to this package are very welcome! If you find any bugs or have improvement suggestions, just open an issue on the GitHub repository. You can also fork the repository, make your changes, and then submit a pull request. 
+Contributions to this package are very welcome! If you find any bugs or have improvement suggestions, just open an issue on this Github [repository](https://github.com/Jaizzer/HTML-to-dropdown-converter.git). You can also fork the repository, make your changes, and then submit a pull request. 
 
 You can email me via `florenzjaizzer.calderon@gmail.com`.
 
