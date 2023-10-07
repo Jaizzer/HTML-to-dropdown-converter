@@ -1,5 +1,4 @@
 function turnToDropDown(dropDownButton) {
-
     // Get drop down items container inside the drop down button.
     const dropDownItemsContainer = dropDownButton.querySelector('.drop-down-items-container');
     dropDownItemsContainer.style.display = 'none';
