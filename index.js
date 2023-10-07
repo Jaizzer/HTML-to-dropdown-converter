@@ -13,3 +13,5 @@ function turnToDropDown(dropDownButton) {
         }
     });
 }
+
+module.exports = turnToDropDown;
