@@ -1,6 +1,6 @@
 {
   "name": "html-to-dropdown-converter",
-  "version": "1.1.2",
+  "version": "1.1.3",
   "description": "Create dropdown menu for your navbar items.",
   "main": "index.js",
   "scripts": {
