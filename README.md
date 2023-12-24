@@ -46,7 +46,7 @@ To utilize the module, follow these steps:
 2. Include the module in your JavaScript file:
 
     ```JavaScript
-    import { turnToDropDown } from './node_modules/html-to-dropdown-converter/index.js';
+    import turnToDropDown from './node_modules/html-to-dropdown-converter/index.js';
     ```
 
 3. Create your HTML structure in the required format:
@@ -107,7 +107,7 @@ Here's an example of how your JavaScript file (main.js in this example) might ap
 
 ```JavaScript
 // main.js
-import { turnToDropDown } from './node_modules/html-to-dropdown-converter/index.js';
+import turnToDropDown from './node_modules/html-to-dropdown-converter/index.js';
 
 const dropDownButton = document.querySelector('.drop-down');
 turnToDropDown(dropDownButton);
