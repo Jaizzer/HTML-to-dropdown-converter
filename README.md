@@ -16,7 +16,7 @@ The HTML to DropDown Converter is a JavaScript module that simplifies the transf
         <div class="drop-down-item">item-2</div>
         <div class="drop-down-item">item-3</div>
         <div class="drop-down-item">item-4</div>
-        <div class="drop-down-item">item-5</div>    
+        <div class="drop-down-item">item-5</div>
     </div>
 </div>
 ```
@@ -38,25 +38,28 @@ You can install the HTML to DropDown Converter module using npm:
 To utilize the module, follow these steps:
 
 1. Include the module in your JavaScript file:
+
     ```JavaScript
-    const { turnToDropDown } = require('html-to-dropdown-converter');
+    import { turnToDropDown } from './node_modules/html-to-dropdown-converter/index.js';
     ```
 
 2. Create your HTML structure in the required format:
+
     ```html
-        <div class="drop-down">
-            DropDown 🔽
-            <div class="drop-down-items-container">
-                <div class="drop-down-item">item-1</div>
-                <div class="drop-down-item">item-2</div>
-                <div class="drop-down-item">item-3</div>
-                <div class="drop-down-item">item-4</div>
-                <div class="drop-down-item">item-5</div>    
-            </div>
+    <div class="drop-down">
+        DropDown 🔽
+        <div class="drop-down-items-container">
+            <div class="drop-down-item">item-1</div>
+            <div class="drop-down-item">item-2</div>
+            <div class="drop-down-item">item-3</div>
+            <div class="drop-down-item">item-4</div>
+            <div class="drop-down-item">item-5</div>
         </div>
+    </div>
     ```
 
 3. Select the drop-down element in your JavaScript code:
+
     ```JavaScript
         const dropDownButton = document.querySelector('.drop-down');
     ```
@@ -71,39 +74,41 @@ To utilize the module, follow these steps:
 Here's an example of how to use the HTML to DropDown Converter:
 
 ```HTML
-<!DOCTYPE html> 
-    <html lang="en"> 
-        <head> 
-            <meta charset="UTF-8"> 
-            <meta name="viewport"content="width=device-width, initial-scale=1.0"> 
-            <title>HTML to DropDown Converter Example</title> 
-        </head> 
-        <body> 
-            <div class="drop-down"> 
-                DropDown 🔽 
-                <div class="drop-down-items-container"> 
-                    <div class="drop-down-item">item-1</div> 
-                    <div class="drop-down-item">item-2</div> 
-                    <div class="drop-down-item">item-3</div> 
-                    <div class="drop-down-item">item-4</div> 
-                    <div class="drop-down-item">item-5</div> 
-                </div> 
-            </div> 
-        
-            <script> 
-                const{ turnToDropDown } = require('html-to-dropdown-converter'); 
-                const dropDownButton = document.querySelector('.drop-down'); 
-                turnToDropDown(dropDownButton); 
-            </script> 
-            
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport"content="width=device-width, initial-scale=1.0">
+            <title>HTML to DropDown Converter Example</title>
+        </head>
+        <body>
+            <div class="drop-down">
+                DropDown 🔽
+                <div class="drop-down-items-container">
+                    <div class="drop-down-item">item-1</div>
+                    <div class="drop-down-item">item-2</div>
+                    <div class="drop-down-item">item-3</div>
+                    <div class="drop-down-item">item-4</div>
+                    <div class="drop-down-item">item-5</div>
+                </div>
+            </div>
+
+            <script>
+                import { turnToDropDown } from './node_modules/html-to-dropdown-converter/index.js';
+                const dropDownButton = document.querySelector('.drop-down');
+                turnToDropDown(dropDownButton);
+            </script>
+
         </body>
     </html>
 ```
 
 ## Contributing
-Contributions to this package are very welcome! If you find any bugs or have improvement suggestions, just open an issue on this Github [repository](https://github.com/Jaizzer/HTML-to-dropdown-converter.git). You can also fork the repository, make your changes, and then submit a pull request. 
+
+Contributions to this package are very welcome! If you find any bugs or have improvement suggestions, just open an issue on this Github [repository](https://github.com/Jaizzer/HTML-to-dropdown-converter.git). You can also fork the repository, make your changes, and then submit a pull request.
 
 You can email me via `florenzjaizzer.calderon@gmail.com`.
 
 ## License
+
 This project is licensed under the [MIT License](./LICENSE).
