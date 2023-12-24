@@ -37,13 +37,19 @@ You can install the HTML to DropDown Converter module using npm:
 
 To utilize the module, follow these steps:
 
-1. Include the module in your JavaScript file:
+1. Make sure that the JavaScript file you will use for your HTML is of type 'module' so that ES6 module's import/export statement would work.
+
+    ```html
+    <script src="main.js" type="module" defer></script>
+    ```
+
+2. Include the module in your JavaScript file:
 
     ```JavaScript
     import { turnToDropDown } from './node_modules/html-to-dropdown-converter/index.js';
     ```
 
-2. Create your HTML structure in the required format:
+3. Create your HTML structure in the required format:
 
     ```html
     <div class="drop-down">
@@ -58,49 +64,53 @@ To utilize the module, follow these steps:
     </div>
     ```
 
-3. Select the drop-down element in your JavaScript code:
+4. Select the drop-down element in your JavaScript code:
 
     ```JavaScript
-        const dropDownButton = document.querySelector('.drop-down');
+    const dropDownButton = document.querySelector('.drop-down');
     ```
 
-4. Call the turnToDropDown function with the selected drop-down element as an argument:
+5. Call the turnToDropDown function with the selected drop-down element as an argument:
     ```JavaScript
-        turnToDropDown(dropDownButton);
+    turnToDropDown(dropDownButton);
     ```
 
 ## Example
 
-Here's an example of how to use the HTML to DropDown Converter:
+Here's an example of how your HTML might appear to DropDown Converter:
 
 ```HTML
 <!DOCTYPE html>
-    <html lang="en">
-        <head>
-            <meta charset="UTF-8">
-            <meta name="viewport"content="width=device-width, initial-scale=1.0">
-            <title>HTML to DropDown Converter Example</title>
-        </head>
-        <body>
-            <div class="drop-down">
-                DropDown 🔽
-                <div class="drop-down-items-container">
-                    <div class="drop-down-item">item-1</div>
-                    <div class="drop-down-item">item-2</div>
-                    <div class="drop-down-item">item-3</div>
-                    <div class="drop-down-item">item-4</div>
-                    <div class="drop-down-item">item-5</div>
-                </div>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"content="width=device-width, initial-scale=1.0">
+        <title>HTML to DropDown Converter Example</title>
+        <script src="main.js" type="module" defer></script> // Ensure the js file is of type 'module'.
+    </head>
+    <body>
+        <div class="drop-down">
+            DropDown 🔽
+            <div class="drop-down-items-container">
+                <div class="drop-down-item">item-1</div>
+                <div class="drop-down-item">item-2</div>
+                <div class="drop-down-item">item-3</div>
+                <div class="drop-down-item">item-4</div>
+                <div class="drop-down-item">item-5</div>
             </div>
+        </div>
+    </body>
+</html>
+```
 
-            <script>
-                import { turnToDropDown } from './node_modules/html-to-dropdown-converter/index.js';
-                const dropDownButton = document.querySelector('.drop-down');
-                turnToDropDown(dropDownButton);
-            </script>
+Here's an example of how your JavaScript file (main.js in this example) might appear:
 
-        </body>
-    </html>
+```JavaScript
+// main.js
+import { turnToDropDown } from './node_modules/html-to-dropdown-converter/index.js';
+
+const dropDownButton = document.querySelector('.drop-down');
+turnToDropDown(dropDownButton);
 ```
 
 ## Contributing
