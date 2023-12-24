@@ -1,4 +1,4 @@
-function turnToDropDown(dropDownButton) {
+export default function turnToDropDown(dropDownButton) {
     // Get drop down items container inside the drop down button.
     const dropDownItemsContainer = dropDownButton.querySelector('.drop-down-items-container');
     dropDownItemsContainer.style.display = 'none';
@@ -12,5 +12,3 @@ function turnToDropDown(dropDownButton) {
         }
     });
 }
-
-module.exports = turnToDropDown;
